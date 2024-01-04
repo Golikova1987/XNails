@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XNails</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Cormorant+SC:wght@300;400&family=Raleway:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="page">
+    <div class="page__container">
+      <header class="header">
+        <div class="header__container">
+          <img
+            src="images/logo.svg"
+            alt="Логотип XNails"
+            class="header__logo"
+          />
+          <ul class="header__nav">
+            <li><a href="#" class="header__nav-item">О нас</a></li>
+            <li><a href="#price" class="header__nav-item">Прайс</a></li>
+            <li><a href="#" class="header__nav-item">Отзывы</a></li>
+            <li><a href="#location" class="header__nav-item">Студии</a></li>
+            <li><a href="#" class="header__nav-item">Блог</a></li>
+            <li>
+              <a href="tel:+78126605088" class="header__nav-phone"
+                >+7 (812) 660-50-88</a
+              >
+            </li>
+          </ul>
+
+          <button class="header__button">Записаться</button>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="main__container">
+          <div class="cover">
+            <div class="cover__container">
+              <div class="cover__description">
+                <div class="cover__description-container">
+                  <div class="cover__description-text">
+                    <h1 class="cover__description-title">
+                      XNAILS - студии маникюра в Санкт-Петербурге
+                    </h1>
+                    <h2 class="cover__description-subtitle">
+                      Мы&nbsp;знаем&nbsp;все&nbsp;о&nbsp;<span>красивом</span> и
+                      <span>качественном</span> покрытии
+                    </h2>
+                  </div>
+
+                  <div class="cover__description-buttons">
+                    <button class="cover__description-button">
+                      записаться
+                    </button>
+                    <a href="#price" class="cover__description-link">
+                      Узнать стоимость
+                    </a>
+                  </div>
+
+                  <div class="cover__description-image">
+                    <img
+                      class="cover__description-img"
+                      src="images/group-small-foto.png"
+                      alt="Изображение работ студии"
+                    />
+                  </div>
+                </div>
+
+                <div class="cover__description-main-image">
+                  <img
+                    src="images/main-foto.png"
+                    alt="Изображение маникюра"
+                    class="cover__description-main-img"
+                  />
+                </div>
+              </div>
+
+              <div class="cover__numeros">
+                <ul class="cover__numeros-list">
+                  <li class="cover__numeros-item">
+                    4<span>года мы радуем <br />наших клиентов</span>
+                  </li>
+                  <li class="cover__numeros-item">
+                    10 000+<span
+                      >маникюров мы сделали<br />за последний год</span
+                    >
+                  </li>
+                  <li class="cover__numeros-item">
+                    3+<span>наши мастера имеют <br />опыт более 3 лет</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="price" id="price">
+            <div class="price__container">
+              <h2 class="price__title">Наши услуги</h2>
+
+              <div class="price__container-menu">
+                <ul class="price__menu">
+                  <li class="price__menu-item active" data-tab="#tab-1">
+                    Маникюр
+                  </li>
+                  <li class="price__menu-item" data-tab="#tab-2">
+                    Наращивание
+                  </li>
+                  <li class="price__menu-item" data-tab="#tab-3">Педикюр</li>
+                  <li class="price__menu-item" data-tab="#tab-4">Брови</li>
+                </ul>
+
+                <div class="price__text-container active" id="tab-1">
+                  <div class="price__text-items">
+                    <ul class="price__text">
+                      <li class="price__paragraph">Снятие покрытия</li>
+                      <li class="price__paragraph">
+                        Маникюр (аппаратный, комбинированный)
+                      </li>
+                      <li class="price__paragraph">
+                        Покрытие гелем Luxio, oniq
+                      </li>
+                      <li class="price__paragraph">
+                        Снятие + маникюр + Покрытие гелем Luxio, oniq
+                      </li>
+                      <li class="price__paragraph">Дизайн ногтей</li>
+                      <li class="price__paragraph">
+                        Укрепление акриловой пудрой
+                      </li>
+                      <li class="price__paragraph">Укрепление гелем</li>
+                      <li class="price__paragraph">
+                        Ремонт натурального ногтя
+                      </li>
+
+                      <button class="price__button">Записаться</button>
+                    </ul>
+
+                    <ul class="price__items">
+                      <li class="price__item">200 ₽</li>
+                      <li class="price__item">1000 ₽</li>
+                      <li class="price__item">900 ₽</li>
+                      <li class="price__item">2100 ₽</li>
+                      <li class="price__item">300-800 ₽</li>
+                      <li class="price__item">300 ₽</li>
+                      <li class="price__item">500 ₽</li>
+                      <li class="price__item">100 ₽</li>
+                    </ul>
+                  </div>
+
+                  <div class="price__images">
+                    <img
+                      src="images/price-foto2.png"
+                      alt="Маникюр"
+                      class="price__image-one"
+                    />
+                    <img
+                      src="images/price-foto1.png"
+                      alt="Маникюр"
+                      class="price__image-two"
+                    />
+                  </div>
+                </div>
+
+                <div class="price__text-container" id="tab-2">
+                  <div class="price__text-items">
+                    <ul class="price__text">
+                      <li class="price__paragraph">Снятие наращенных ногтей</li>
+                      <li class="price__paragraph">Ремонт ногтя гелем</li>
+                      <li class="price__paragraph">
+                        Наращивание + маникюр + покрытие
+                      </li>
+                      <li class="price__paragraph">
+                        Коррекция + маникюр + покрытие
+                      </li>
+                      <li class="price__paragraph">
+                        Донаращивание сломанного ногтя
+                      </li>
+
+                      <button class="price__button">Записаться</button>
+                    </ul>
+
+                    <ul class="price__items">
+                      <li class="price__item">400 ₽</li>
+                      <li class="price__item">200 ₽</li>
+                      <li class="price__item">3100 ₽</li>
+                      <li class="price__item">2700 ₽</li>
+                      <li class="price__item">200 ₽</li>
+                    </ul>
+                  </div>
+
+                  <div class="price__images">
+                    <img
+                      src="images/price-foto3.png"
+                      alt="Маникюр"
+                      class="price__image-one"
+                    />
+                    <img
+                      src="images/price-foto4.png"
+                      alt="Маникюр"
+                      class="price__image-two"
+                    />
+                  </div>
+                </div>
+
+                <div class="price__text-container" id="tab-3">
+                  <div class="price__text-items">
+                    <ul class="price__text">
+                      <li class="price__paragraph">Снятие покрытия</li>
+                      <li class="price__paragraph">Педикюр</li>
+                      <li class="price__paragraph">Покрытие Luxio, ONIQ</li>
+                      <li class="price__paragraph">
+                        Снятие + педикюр + покрытие
+                      </li>
+
+                      <button class="price__button">Записаться</button>
+                    </ul>
+
+                    <ul class="price__items">
+                      <li class="price__item">200 ₽</li>
+                      <li class="price__item">1400 ₽</li>
+                      <li class="price__item">900 ₽</li>
+                      <li class="price__item">2700 ₽</li>
+                    </ul>
+                  </div>
+
+                  <div class="price__images">
+                    <img
+                      src="images/price-foto5.png"
+                      alt="Маникюр"
+                      class="price__image-one"
+                    />
+                    <img
+                      src="images/price-foto6.png"
+                      alt="Маникюр"
+                      class="price__image-two"
+                    />
+                  </div>
+                </div>
+
+                <div class="price__text-container" id="tab-4">
+                  <div class="price__text-items">
+                    <ul class="price__text">
+                      <li class="price__paragraph">Коррекция бровей</li>
+                      <li class="price__paragraph">
+                        Окрашивание бровей краской
+                      </li>
+                      <li class="price__paragraph">Окрашивание бровей хной</li>
+                      <li class="price__paragraph">
+                        Коррекция и окрашивание хной /краской
+                      </li>
+                      <li class="price__paragraph">
+                        Моделирование + коррекция + окрашивание
+                      </li>
+                      <li class="price__paragraph">
+                        Ламинирование + кореекция
+                      </li>
+                      <li class="price__paragraph">
+                        Ламинирование + коррекция + окрашивание
+                      </li>
+                      <button class="price__button">Записаться</button>
+                    </ul>
+
+                    <ul class="price__items">
+                      <li class="price__item">600 ₽</li>
+                      <li class="price__item">900 ₽</li>
+                      <li class="price__item">900 ₽</li>
+                      <li class="price__item">1500 ₽</li>
+                      <li class="price__item">2000 ₽</li>
+                      <li class="price__item">2000 ₽</li>
+                      <li class="price__item">2300 ₽</li>
+                    </ul>
+                  </div>
+
+                  <div class="price__images">
+                    <img
+                      src="images/price-foto7.png"
+                      alt="Маникюр"
+                      class="price__image-one"
+                    />
+                    <img
+                      src="images/price-foto8.png"
+                      alt="Маникюр"
+                      class="price__image-two"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio">
+            <div class="portfolio__container">
+              <div class="portfolio__title">Портфолио</div>
+              <div class="portfolio__slider">
+
+                <div class="portfolio__slider-line">
+                  <img src="images/slide1.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide2.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide3.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide4.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide5.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide6.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide7.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide8.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide1.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide2.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide3.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide4.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide5.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide6.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide7.png" alt="Маникюр" class="portfolio__slide">
+                  <img src="images/slide8.png" alt="Маникюр" class="portfolio__slide">
+                </div>
+
+                <button class="portfolio__slider-prev">
+                  <img class="portfolio__slider-prev-img" src="images/arrow-prev.svg" alt="Иконка стрелка назад">
+                </button>
+                <button class="portfolio__slider-next">
+                  <img class="portfolio__slider-prev-img" src="images/arrow-next.svg" alt="Иконка стрелка вперед">
+                </button>
+
+                <div class="portfolio__slider-wrapper">
+                  <div class="portfolio__slider-dot active-dot"></div>
+                  <div class="portfolio__slider-dot"></div>
+                  <div class="portfolio__slider-dot"></div>
+                  <div class="portfolio__slider-dot"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="location" id="location">
+            <div class="location__container">
+              <h2 class="location__title">Наши студии</h2>
+              <ul class="location__list">
+                <li class="location__item active" data-tab="#tab-5">
+                  Xnails Центр
+                </li>
+                <li class="location__item" data-tab="#tab-6">
+                  Xnails Петроградка
+                </li>
+              </ul>
+              <div class="location__content active" id="tab-5">
+                <div class="location__map-container">
+                  <iframe
+                    class="location__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.4339666242872!2d30.357661876699602!3d59.94153416186759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696319f3b17714b%3A0x19e22bb76fff4dcf!2zWG5haWxzINCm0LXQvdGC0YA!5e0!3m2!1sru!2ses!4v1704265817702!5m2!1sru!2ses"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <div class="location__text">
+                  <div class="location__text-container">
+                    <p class="location__paragraph">
+                      Наша студия находится в Центральном районе г.
+                      Санкт-Петербург, в 5 минутах ходьбы от станции метро
+                      «Чернышевская»
+                    </p>
+                    <p class="location__paragraph">+7 911 924 63-45</p>
+                    <p class="location__paragraph">
+                      XNAILS Центр Гродненский переулок, д. 7 м. Чернышевская,
+                      г. Санкт-Петербург
+                    </p>
+                    <p class="location__paragraph">Пн. — Вс.:10:00 — 22:00</p>
+                  </div>
+                  <div class="location__button">
+                    <button class="location__btn">записаться</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="location__content" id="tab-6">
+                <div class="location__map-container">
+                  <iframe
+                    class="location__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.7179882810644!2d30.29303737670039!3d59.95341286091085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631dfe6c1249f%3A0x8d23a6e202e331ed!2zWG5haWxzINCf0LXRgtGA0L7Qs9GA0LDQtNC60LA!5e0!3m2!1sru!2ses!4v1704268573071!5m2!1sru!2ses"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <div class="location__text">
+                  <div class="location__text-container">
+                    <p class="location__paragraph">
+                      Новая студия находится в Петроградском районе г.
+                      Санкт-Петербург, в 5 минутах ходьбы от станции метро
+                      «Спортивная»
+                    </p>
+                    <p class="location__paragraph">+7 911 924 63-45</p>
+                    <p class="location__paragraph">
+                      XNAILS Петроградка Ул. Зверинская, д. 12Б м. Спортивная,
+                      г. Санкт-Петербург
+                    </p>
+                    <p class="location__paragraph">Пн. — Вс.:10:00 — 22:00</p>
+                  </div>
+                  <div class="location__button">
+                    <button class="location__btn">записаться</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__logo-container">
+            <img src="images/logo-footer.svg" alt="Логотип XNails" class="footer__main-logo" />
+            <ul class="footer__links">
+              <li class="footer__link">
+                <a href="#" class="footer__link-logo"><img src="images/img1-footer.svg" alt="" class="footer__link-img"></a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__link-logo"><img src="images/img2-footer.svg" alt="" class="footer__link-img"></a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__link-logo"><img src="images/img3-footer.svg" alt="" class="footer__link-img"></a>
+              </li>
+              <li class="footer__link">
+                <a href="#" class="footer__link-logo"><img src="images/img4-footer.svg" alt="" class="footer__link-img"></a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer__nav">
+            <li class="footer__nav-item"><a class="footer__nav-link" href="">О нас</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="">Портфолио</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="">Отзывы</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="">Политика конфиденциальности</a></li>
+          </ul>
+
+          <ul class="footer__nav">
+            <li class="footer__nav-item"><a class="footer__nav-link" href="">Акции</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="">Блог</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="">Прайс</a></li>
+            <li class="footer__nav-item"><a class="footer__nav-link" href="">Студии</a></li>
+          </ul>
+
+          <form action="" class="form">
+            <h2 class="form__title">Узнавайте первым <br> о новых акциях!</h2>
+            <input class="form__input" type="email" placeholder="Ваш e-mail">
+            </input>
+            <span></span>
+            <button class="footer__button"><img class="footer__btn" src="images/footer-btn.svg" alt=""></button>
+            <div class="form__text">
+              <button class="form__text-button"></button>
+              <p class="form__paragraph">
+                Я соглашаюсь с условиями <br> <span>Политики конфиденциальности</span>
+              </p>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
