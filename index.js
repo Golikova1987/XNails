@@ -117,3 +117,41 @@ sliderDots.forEach((dot, index) => {
   })
 })
 
+// попап
+
+// const openPopup = document.getElementById('open-popup');
+const openPopup = document.querySelectorAll('.open-popup');
+const closePopup = document.getElementById('close-popup');
+const popup = document.getElementById('popup');
+
+openPopup.forEach(function(button) {
+  button.addEventListener('click', function(event) {
+    event.preventDefault()
+    popup.classList.add('open');
+  })
+})
+
+closePopup.addEventListener('click', () => {
+    popup.classList.remove('open');
+})
+
+// openPopup.addEventListener('click', function(e) {
+//   e.preventDefault()
+//   popup.classList.add('open');
+// })
+
+// closePopup.addEventListener('click', () => {
+//   popup.classList.remove('open');
+// })
+
+
+
+
+// бургер меню
+
+const buttonBurger = document.querySelector('.header__burger');
+const menuBurger = document.querySelector('.header__nav');
+
+buttonBurger.addEventListener('click', () => {
+  menuBurger.classList.add('active')
+})
