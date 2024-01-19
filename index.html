@@ -14,7 +14,43 @@
   </head>
   <body class="page">
     <div class="page__container">
-      <header class="header open">
+
+      <header class="header">
+        <div class="header__container">
+          <div class="header__nav-container">
+            <div class="header__logo-container">
+              <button class="header__burger-button">
+                <span></span><span></span><span></span>
+              </button>
+              <img
+                src="images/logo.svg"
+                alt="Логотип XNails"
+                class="header__logo"
+              >
+            </div>
+            <div class="header__nav-body">
+
+              <ul class="header__nav">
+                <li><a href="#" class="header__nav-item">О нас</a></li>
+                <li><a href="#price" class="header__nav-item">Прайс</a></li>
+                <li><a href="#" class="header__nav-item">Отзывы</a></li>
+                <li><a href="#location" class="header__nav-item">Студии</a></li>
+                <li><a href="#" class="header__nav-item">Блог</a></li>
+                <li class="header__nav-phone-list">
+                  <a href="tel:+78126605088" class="header__nav-phone"
+                    >+7 (812) 660-50-88</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <button class="header__button open-popup" id="open-popup" type="button">Записаться</button>
+
+        </div>
+      </header>
+      <!-- <header class="header open">
         <div class="header__container">
           <img src="images/burger.svg" alt="Кнопка открытия меню" class="header__burger">
           <img
@@ -22,22 +58,33 @@
             alt="Логотип XNails"
             class="header__logo"
           >
-          <ul class="header__nav">
-            <li><a href="#" class="header__nav-item">О нас</a></li>
-            <li><a href="#price" class="header__nav-item">Прайс</a></li>
-            <li><a href="#" class="header__nav-item">Отзывы</a></li>
-            <li><a href="#location" class="header__nav-item">Студии</a></li>
-            <li><a href="#" class="header__nav-item">Блог</a></li>
-            <li>
-              <a href="tel:+78126605088" class="header__nav-phone"
-                >+7 (812) 660-50-88</a
-              >
-            </li>
-          </ul>
+          <div class="header__nav-container">
+            <div class="header__nav-burger">
+              <button class="header__nav-button">&#10006;</button>
+              <img
+              src="images/logo.svg"
+              alt="Логотип XNails"
+              class="header__logo-burger"
+            >
+            </div>
+            <ul class="header__nav">
+              <li><a href="#" class="header__nav-item">О нас</a></li>
+              <li><a href="#price" class="header__nav-item">Прайс</a></li>
+              <li><a href="#" class="header__nav-item">Отзывы</a></li>
+              <li><a href="#location" class="header__nav-item">Студии</a></li>
+              <li><a href="#" class="header__nav-item">Блог</a></li>
+              <li class="header__nav-phone-list">
+                <a href="tel:+78126605088" class="header__nav-phone"
+                  >+7 (812) 660-50-88</a
+                >
+              </li>
+            </ul>
+
+          </div>
 
           <button class="header__button open-popup" id="open-popup" type="button">Записаться</button>
         </div>
-      </header>
+      </header> -->
 
       <main class="main">
         <div class="main__container">
@@ -298,7 +345,7 @@
                       </ul>
 
                        <button class="price__button open-popup" type="button">Записаться</button>
-                       
+
                     </div>
 
 

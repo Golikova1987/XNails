@@ -149,9 +149,22 @@ closePopup.addEventListener('click', () => {
 
 // бургер меню
 
-const buttonBurger = document.querySelector('.header__burger');
-const menuBurger = document.querySelector('.header__nav');
+const buttonBurger = document.querySelector('.header__burger-button');
+const menuBurger = document.querySelector('.header');
+const linkBurger = document.querySelectorAll('.header__nav-item');
+
+// buttonBurger.addEventListener('click', () => {
+//   menuBurger.classList.add('open')
+// })
 
 buttonBurger.addEventListener('click', () => {
-  menuBurger.classList.add('active')
+  menuBurger.classList.toggle('open')
 })
+
+linkBurger.forEach((link) =>
+  link.addEventListener('click', () => {
+    buttonBurger.classList.remove('open')
+    menuBurger.classList.remove('open')
+  }))
+
+
