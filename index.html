@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XNails</title>
+    <title>XNAILS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,17 +22,19 @@
               <button class="header__burger-button">
                 <span></span><span></span><span></span>
               </button>
-              <img
-                src="images/logo.svg"
-                alt="Логотип XNails"
-                class="header__logo"
-              >
+              <a href="index.html">
+                <img
+                  src="images/logo.svg"
+                  alt="Логотип XNails"
+                  class="header__logo"
+                >
+              </a>
             </div>
             <div class="header__nav-body">
 
               <ul class="header__nav">
                 <li><a href="#" class="header__nav-item">О нас</a></li>
-                <li><a href="#price" class="header__nav-item">Прайс</a></li>
+                <li><a href="index-1.html" class="header__nav-item" target="_blank">Прайс</a></li>
                 <li><a href="#" class="header__nav-item">Отзывы</a></li>
                 <li><a href="#location" class="header__nav-item">Студии</a></li>
                 <li><a href="#" class="header__nav-item">Блог</a></li>
@@ -50,41 +52,6 @@
 
         </div>
       </header>
-      <!-- <header class="header open">
-        <div class="header__container">
-          <img src="images/burger.svg" alt="Кнопка открытия меню" class="header__burger">
-          <img
-            src="images/logo.svg"
-            alt="Логотип XNails"
-            class="header__logo"
-          >
-          <div class="header__nav-container">
-            <div class="header__nav-burger">
-              <button class="header__nav-button">&#10006;</button>
-              <img
-              src="images/logo.svg"
-              alt="Логотип XNails"
-              class="header__logo-burger"
-            >
-            </div>
-            <ul class="header__nav">
-              <li><a href="#" class="header__nav-item">О нас</a></li>
-              <li><a href="#price" class="header__nav-item">Прайс</a></li>
-              <li><a href="#" class="header__nav-item">Отзывы</a></li>
-              <li><a href="#location" class="header__nav-item">Студии</a></li>
-              <li><a href="#" class="header__nav-item">Блог</a></li>
-              <li class="header__nav-phone-list">
-                <a href="tel:+78126605088" class="header__nav-phone"
-                  >+7 (812) 660-50-88</a
-                >
-              </li>
-            </ul>
-
-          </div>
-
-          <button class="header__button open-popup" id="open-popup" type="button">Записаться</button>
-        </div>
-      </header> -->
 
       <main class="main">
         <div class="main__container">
@@ -116,7 +83,7 @@
                   <button class="cover__description-button open-popup" type="button">
                     записаться
                   </button>
-                  <a href="#price" class="cover__description-link">
+                  <a href="index-1.html" class="cover__description-link" target="_blank">
                     Узнать стоимость
                   </a>
                 </div>
@@ -510,16 +477,16 @@
           <p class="popup__paragraph">Мы перезвоним Вам для уточнения деталей и времени посещения нашего салона - заполните форму ниже</p>
           <form action="#" class="popup__form" id="form" name="form">
             <div class="popup__input-box">
-              <input id="name" name="name" data-reg="^[А-ЯЁ][а-яё]*$" type="text" placeholder="Ваше имя" class="popup__input" required>
+              <input id="name" name="name" data-min-Length="2" data-required="true" data-max-Length="6" data-reg="^[А-ЯЁ][а-яё]*$" type="text" placeholder="Ваше имя" class="popup__input" >
             </div>
             <div class="popup__input-box">
-              <input type="text" id="phone" name="phone" data-reg="^((\+7|7|8)+([0-9]){10})$" placeholder="Номер телефона"  class="popup__input" required>
+              <input type="number" id="phone" data-min-Length="11" data-required="true" name="phone" data-maxLength="6" data-reg="^((\+7|7|8)+([0-9]){10})$" placeholder="Номер телефона"  class="popup__input" >
             </div>
             <div class="popup__input-box message-box">
               <textarea class="popup__input-textarea" placeholder="Сообщение" name="message"></textarea>
             </div>
             <div class="popup__button-сontainer">
-              <button class="popup__button" type="button">Отправить</button>
+              <button class="popup__button" type="submit">Отправить</button>
             </div>
           </form>
           <div class="popup__close" id="close-popup">&#10006;</div>
@@ -563,7 +530,7 @@
               <ul class="footer__nav-list">
                 <li class="footer__nav-item"><a class="footer__nav-link" href="">Акции</a></li>
                 <li class="footer__nav-item"><a class="footer__nav-link" href="">Блог</a></li>
-                <li class="footer__nav-item"><a class="footer__nav-link" href="">Прайс</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="index-1.html" target="_blank">Прайс</a></li>
                 <li class="footer__nav-item"><a class="footer__nav-link footer__nav-item-mob" href="">Студии</a></li>
               </ul>
 

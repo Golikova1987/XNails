@@ -46,6 +46,10 @@
   }
 }
 
+.header {
+  margin-bottom: 80px;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -243,14 +247,9 @@
     display: none;
   }
 
-  .header__burger-button {
-    /* margin-right: 100%; */
-  }
-
 }
 
 .cover {
-  margin-top: 80px;
   margin-bottom: 100px;
 }
 
@@ -687,7 +686,7 @@
 }
 
 .location {
-  margin: 100px 0 94px;
+  margin: 100px 0 0;
 }
 
 .location__list {
@@ -854,6 +853,10 @@
   .location__map {
     height: 44vh;
   }
+}
+
+.footer {
+  margin-top: 100px;
 }
 
 .footer__container {
@@ -1380,6 +1383,17 @@
   right: 15px;
   font-size: 21px;
   cursor: pointer;
+}
+
+.error .popup__input {
+  border: solid 0.5px red;
+}
+
+.error-label {
+  display: block;
+  color: red;
+  margin-bottom: 10px;
+  text-align: start;
 }
 
 @media (max-width: 800px) {

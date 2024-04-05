@@ -119,7 +119,6 @@ sliderDots.forEach((dot, index) => {
 
 // попап
 
-// const openPopup = document.getElementById('open-popup');
 const openPopup = document.querySelectorAll('.open-popup');
 const closePopup = document.getElementById('close-popup');
 const popup = document.getElementById('popup');
@@ -135,27 +134,11 @@ closePopup.addEventListener('click', () => {
     popup.classList.remove('open');
 })
 
-// openPopup.addEventListener('click', function(e) {
-//   e.preventDefault()
-//   popup.classList.add('open');
-// })
-
-// closePopup.addEventListener('click', () => {
-//   popup.classList.remove('open');
-// })
-
-
-
-
 // бургер меню
 
 const buttonBurger = document.querySelector('.header__burger-button');
 const menuBurger = document.querySelector('.header');
 const linkBurger = document.querySelectorAll('.header__nav-item');
-
-// buttonBurger.addEventListener('click', () => {
-//   menuBurger.classList.add('open')
-// })
 
 buttonBurger.addEventListener('click', () => {
   menuBurger.classList.toggle('open')
@@ -166,5 +149,87 @@ linkBurger.forEach((link) =>
     buttonBurger.classList.remove('open')
     menuBurger.classList.remove('open')
   }))
+
+// валидация формы
+
+function validation(form) {
+
+  function removeError(input) {
+    const parent = input.parentNode;
+
+    if (parent.classList.contains('error')) {
+      parent.querySelector('.error-label').remove()
+      parent.classList.remove('error')
+    }
+  }
+
+  function createError(input, text) {
+    const parent = input.parentNode;
+    const errorLabel = document.createElement('label')
+
+    errorLabel.classList.add('error-label')
+    errorLabel.textContent = text
+
+    parent.classList.add('error')
+
+    parent.append(errorLabel)
+  }
+
+  let result = true;
+
+  const allInputs = form.querySelectorAll('input')
+
+  allInputs.forEach(input => {
+
+    removeError(input)
+
+    if (input.dataset.minLength) {
+
+      if (input.value.length < input.dataset.minLength) {
+
+        removeError(input)
+
+        createError(input,`Минимальное количество символов: ${input.dataset.minLength}`)
+        result = false
+      }
+
+    }
+
+    if (input.dataset.maxLength) {
+
+      if (input.value.length > input.dataset.maxLength) {
+
+        removeError(input)
+
+        createError(input,`Максимальное количество символов: ${input.dataset.maxLength}`)
+        result = false
+      }
+
+    }
+
+    if (input.dataset.required == "true") {
+
+      if (input.value == "") {
+
+        removeError(input)
+        createError(input,'Поле не заполнено')
+        result = false
+      }
+
+    }
+
+  })
+
+  return result
+}
+
+document.getElementById('form').addEventListener('submit', function(event) {
+  event.preventDefault()
+
+  if(validation(this) == true) {
+
+    alert('Успех')
+  }
+})
 
 
